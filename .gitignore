@@ -2,4 +2,4 @@
 story.py
 
 # игнорируем фотки
-static/*.jpg
+static/images/*.jpg
