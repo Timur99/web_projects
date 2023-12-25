@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-игра</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            background-image:url('static/images/fon.jpg');
+        }
+
+        .game-container {
+            display: flex;
+            height: 400px;
+            max-width: 800px;
+            width: 100%;
+            background-color: #193622;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .scene {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+            color: white;
+        }
+
+        .image-container {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .options {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .option-btn {
+            margin: 12px;
+            padding: 10px 50px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ae0116;
+            color: white;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .exit_btn {
+            margin: 12px;
+            padding: 10px 50px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #EE0116;
+            color: white;
+            border: none;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="scene">
+            <h2> {{ scene.name }}</h2>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/' + scene.image) }}" alt="Scene Image">
+            </div>
+        </div>
+        <div class="options">
+            <h3>{{ user_answer }}{{ scene.text }} </h3>
+            <form id="answerForm" method="post" action="{{ url_for('submit_answer') }}">
+                {% for key, value in scene.options.items() %}
+                    <button class="option-btn" type="button" onclick="submitAnswer('{{ key }}')">{{ value }}</button>
+                {% endfor %}
+                <input type="hidden" name="answer" id="answerInput">
+            </form>
+            <form action="/exit" method="post">
+            <button class = "exit_btn" type="submit">Начать заново</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitAnswer(answer) {
+            document.getElementById('answerInput').value = answer;
+            document.getElementById('answerForm').submit();
+        }
+    </script>
+</body>
+</html>
