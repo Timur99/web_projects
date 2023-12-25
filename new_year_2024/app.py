@@ -31,6 +31,7 @@ def exit():
     player_state['current_scene'] = 1
     return redirect(url_for('index'))
     #return render_template('index.html', scene=1)
+
 def get_current_scene():
     for scene in story_data:
         if scene['id'] == player_state['current_scene']:
