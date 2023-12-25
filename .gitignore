@@ -2,4 +2,4 @@
 story.py
 
 # игнорируем фотки
-static/images/*.jpg
+new_year_2024/static/images/*.jpg
