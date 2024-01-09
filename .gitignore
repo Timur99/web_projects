@@ -3,3 +3,6 @@ story.py
 
 # игнорируем фотки
 new_year_2024/static/images/*.jpg
+
+# игнорируем видео
+new_year_2024/static/videos
