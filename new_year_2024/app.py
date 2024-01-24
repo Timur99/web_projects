@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, make_response
-from story import story_data # тут хранится история формата [{},{}]
+from story import story_data  # тут хранится история формата [{},{}]
 
-app = Flask(__name__, template_folder='templates', static_folder='static', static_url_path='/static')
-player_state = {
-    'current_scene': 0,
-    'answers': {}
-}
+app = Flask(
+    __name__,
+    template_folder='templates',
+    static_folder='static',
+    static_url_path='/static',
+)
+player_state = {'current_scene': 0, 'answers': {}}
 user_answer = ''
 
 
@@ -14,7 +16,11 @@ def index():
     current_scene = get_current_scene()
     print(current_scene)
     if current_scene['id'] == 4:
-        return render_template('index.html', scene=current_scene, user_answer=story_data[4]['options'].get(user_answer,''))
+        return render_template(
+            'index.html',
+            scene=current_scene,
+            user_answer=story_data[4]['options'].get(user_answer, ''),
+        )
     return render_template('index.html', scene=current_scene, user_answer='')
 
 
@@ -27,11 +33,13 @@ def submit_answer():
     print(answer)
     return redirect(url_for('index'))
 
+
 @app.route('/exit', methods=['POST'])
 def exit():
     player_state['current_scene'] = 0
     return redirect(url_for('index'))
-    #return render_template('index.html', scene=1)
+    # return render_template('index.html', scene=1)
+
 
 def get_current_scene():
     for scene in story_data:
@@ -47,6 +55,7 @@ def save_answer(answer):
         return None
     if next_scene is not None:
         player_state['current_scene'] = next_scene
+
 
 if __name__ == '__main__':
     app.run(debug=True)
