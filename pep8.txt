@@ -1,5 +1,5 @@
 Автоматическая настройка PEP8 для кода на Python
-
-pyformat --in-place .\story.py
-black
-autopep8 --in-place --aggressive --aggressive .\story.py
+(перед использованием надо установить библиотеки)
+1. pyformat --in-place .\story.py
+2. black
+3. autopep8 --in-place --aggressive --aggressive .\story.py
