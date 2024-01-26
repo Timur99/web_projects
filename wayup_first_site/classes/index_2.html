@@ -7,15 +7,26 @@
     <!-- управляем адаптивностью -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">   <!-- верстка подходящая под explorer и edge -->
     <title>Sportbit Pro</title> <!-- заголовок страницы -->
+    <!-- шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>  <!-- контект страницы -->
-    <img src="img/image.png" alt="Watch">
-    <div> <!-- группа объектов  -->
-        <h1> Smart watch <br> for smart people</h1>  <!--br - это как \n-->
-        <p>Perfect for your health, life and sports and etc.</p>
-        <a href="#">Buy now</a>  <!-- кнопка -->
-    </div>
+    <header class="header" id="header">
+        <div class="container"> <!-- class нужен чтобы задавать параметры для контейнеров внутри него -->
+            <img src="img/logo.svg" alt="Sportbit" class="logo">
+            <div class="offer-wrapper"> <!-- обертка -->
+                <img src="img/image.png" alt="Watch">
+                <div class="offer"> <!-- группа объектов  -->
+                    <h1> Smart watch <br> for smart people</h1>  <!--br - это как \n-->
+                    <p class="intro_text">Perfect for your health, life and sports and etc.</p>
+                    <a href="#" class="btn">Buy now</a>  <!-- кнопка -->
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>   <!-- закрытие контейнера html -->
 
