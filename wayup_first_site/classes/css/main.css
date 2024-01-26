@@ -41,7 +41,7 @@ h1 {
     font-size: 18px;
     font-weight: 700; /* жирность текста */
     display: block; /* превращение текстового в блок, но решение это inline-block; */
-    width: 216px;
+    width: 218px;
 }
 
 .offer-wrapper {
