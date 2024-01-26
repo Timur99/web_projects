@@ -94,13 +94,15 @@ h6 {
 }
 
 aples {
-    width: 200px; /* widtd - длина */
+    width: 200px; /* width - длина */
     background: #000;
     margin: 100px 20px 10px 30px; /* отступы */
     /* margin-top: 10px; */
     padding: 10px 20px; /* сверху и снизу по 10, слева и справа по 20 */
     /* padding - отступ внутрь элемента margin - отступ наружу */
 }
+
+
 
 /*
 селектор (element or block) {
