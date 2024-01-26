@@ -1,9 +1,11 @@
 body {
     margin:0; /* это расстояние от элемента */
     padding:0;  /* это отступы внутри, тоесть от границ элемента */
-    font-family: Arial, sans-serif;  /* sans-serif - без засечки */
-    display: flex; /* элементы не последовательны а по горизонтали */
+    font-family: 'Open Sans', sans-serif;  /* sans-serif - без засечки */
+    /*
+    display: flex;  элементы не последовательны а по горизонтали
     align-items: center;
+    */
 }
 
 *  /* для всех элементов */
@@ -11,17 +13,26 @@ body {
     box-sizing: border-box;  /* border-box - задает фиксированный размер при использовании паддинга */
 }
 
+.container  {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 60px;
+}
+
 h1 {
     font-size: 50px;
 }
 
-p {
+.intro_text {
     font-size: 18px;
     margin: 30px 0px;
 }
 
 
-a {
+.btn {
     border-radius: 100px;
     background: black;
     color: white;
@@ -33,11 +44,28 @@ a {
     width: 216px;
 }
 
+.offer-wrapper {
+    display: flex;  /* элементы не последовательны а по горизонтали */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 79px;
+}
+
+.offer {
+    width: 465px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block; /* преобразованиеиз строчного в блочный */
+}
+
+/* будем использовать контейнеры
 div {
     width: 465px;
     margin-left: 180px;
 }
-
+*/
 
 
 
