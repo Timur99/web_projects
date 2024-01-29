@@ -20,6 +20,13 @@ body {
     margin: 0 auto;
 }
 
+/* будем использовать контейнеры
+div {
+    width: 465px;
+    margin-left: 180px;
+}
+*/
+
 h1, h2, h3, h4 ,h5 ,h6 {
     margin: 0;
     font-weight: 700;
@@ -79,12 +86,7 @@ section {
     display: block; /* преобразованиеиз строчного в блочный */
 }
 
-/* будем использовать контейнеры
-div {
-    width: 465px;
-    margin-left: 180px;
-}
-*/
+
 
 
 h6 {
