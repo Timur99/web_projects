@@ -4,6 +4,7 @@ body {
     margin:0; /* это расстояние от элемента */
     padding:0;  /* это отступы внутри, тоесть от границ элемента */
     font-family: 'Open Sans', sans-serif;  /* sans-serif - без засечки */
+    font-size: 18px; /* 18px для всех параграфов */
     /*
     display: flex;  элементы не последовательны а по горизонтали
     align-items: center;
@@ -26,6 +27,10 @@ div {
     margin-left: 180px;
 }
 */
+
+p {
+    margin: 0;
+}
 
 h1, h2, h3, h4 ,h5 ,h6 {
     margin: 0;
@@ -50,7 +55,7 @@ h2 {
 }
 
 section {
-    padding-top: 120px;
+    padding-top: 120px; /* отступ сверху по каждой секции */
 }
 
 .footer-wrapper {
@@ -102,6 +107,36 @@ aples {
     /* margin-top: 10px; */
     padding: 10px 20px; /* сверху и снизу по 10, слева и справа по 20 */
     /* padding - отступ внутрь элемента margin - отступ наружу */
+}
+
+.digit-item {
+    display: flex;
+    align-items: center;
+}
+.digit {
+    border: solid 1px #000000;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 77px;
+    height: 77px;
+    display: flex; /* практически тоже что и block */
+    align-items: center;
+    justify-content: center;
+    margin-right: 34px;
+}
+
+.digit-title {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+
+.digits {
+    display: flex;
+    flex-direction: column; /* flex по колонкам, так как по умолчанию в строку */
+    gap: 41px;
+    width: 720px;
+    margin: 70px auto 0 auto; /* справа и слева auto, то элемент будет по центру */
 }
 
 
