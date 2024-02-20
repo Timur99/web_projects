@@ -35,7 +35,7 @@ p {
 h1, h2, h3, h4 ,h5 ,h6 {
     margin: 0;
     font-weight: 700;
-    line-height: 1.4em;
+    line-height: 1.4em; /* это высота строки (диапазон между строками) 1.4em это 140% */
 }
 
 h1 {
