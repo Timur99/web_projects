@@ -144,6 +144,7 @@ aples {
 .practice-wrap {
     background: linear-gradient(102deg, #E8FFE8 17.38%, #D1F0FF 81.25%);
     border-radius: 60px;
+    display: inline-block;
 }
 
 .practice-block {
@@ -156,7 +157,6 @@ aples {
 
 .practice-text {
     margin: 24px 0;
-    margin-left: 100px;
 }
 
 /*
