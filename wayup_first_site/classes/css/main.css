@@ -145,6 +145,7 @@ aples {
     background: linear-gradient(102deg, #E8FFE8 17.38%, #D1F0FF 81.25%);
     border-radius: 60px;
     display: flex;
+    margin-left: 30px;
 }
 
 .practice-block {
