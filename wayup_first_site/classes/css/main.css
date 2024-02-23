@@ -158,7 +158,10 @@ aples {
     margin: 24px 0;
 }
 
-.footer-wrapper
+.footer-wrapper {
+    align-items: center;
+    text-align: center;
+}
 
 /*
 селектор (element or block) {
