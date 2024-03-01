@@ -144,6 +144,9 @@ aples {
 .practice-wrap {
     background: linear-gradient(102deg, #E8FFE8 17.38%, #D1F0FF 81.25%);
     border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 93px 168px 89px 122px; /* отступы внутрь элемента */
 }
 
 .practice-block {
@@ -158,6 +161,9 @@ aples {
     margin: 24px 0;
 }
 
+.ball {
+    margin-right: 101px;
+}
 
 /*
 селектор (element or block) {
