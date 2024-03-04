@@ -1,0 +1,228 @@
+/* сначала ставить самые повторяемые объекты*/
+
+body {
+    margin:0; /* это расстояние от элемента */
+    padding:0;  /* это отступы внутри, тоесть от границ элемента */
+    font-family: 'Playfair Display', sans-serif;  /* sans-serif - без засечки */
+    font-size: 18px; /* 18px для всех параграфов */
+    /*
+    display: flex;  элементы не последовательны а по горизонтали
+    align-items: center;
+    */
+
+}
+
+.playfair-display-intro_text {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.collapsible {
+  cursor: pointer;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 70px;
+  display: none;
+    text-align: center;
+}
+
+*  /* для всех элементов */
+    {
+    box-sizing: border-box;  /* border-box - задает фиксированный размер при использовании паддинга */
+}
+
+.container  {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* будем использовать контейнеры
+div {
+    width: 465px;
+    margin-left: 180px;
+}
+*/
+
+p {
+    margin: 0;
+    line-height: 1.37em;
+}
+
+
+h1, h2, h3, h4 ,h5 ,h6 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4em; /* это высота строки (диапазон между строками) 1.4em это 140% */
+}
+
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 25px;
+    text-align: center; /* расположение текста внутри блока по центру */
+}
+
+.header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.intro_text {
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+section {
+    padding-top: 120px; /* отступ сверху по каждой секции */
+}
+
+.footer-wrapper {
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 100px;
+    background: black;
+    color: white;
+    padding: 22px 70px;
+    text-decoration: none; /* убирает подчеркивание у ссылок */
+    font-size: 18px;
+    font-weight: 700; /* жирность текста */
+    display: block; /* превращение текстового в блок, но решение это inline-block; */
+    width: 218px;
+}
+
+.offer-wrapper {
+    background: linear-gradient(102deg, #5fc1bd 17.38%, #d851ae 81.25%);
+    display: flex;  /* элементы не последовательны а по горизонтали */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 79px;
+    border-radius: 30px;
+    width: 1100px;
+    height: 450px;
+}
+
+.offer-wrapper2 {
+    background: linear-gradient(102deg, #5fc1bd 17.38%, #d851ae 81.25%);
+    display: flex;  /* элементы не последовательны а по горизонтали */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 79px;
+    margin-bottom: 79px;
+    border-radius: 30px;
+    width: 1100px;
+    height: 450px;
+}
+
+.offer {
+    margin-left: 150px;
+    width: 465px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block; /* преобразованиеиз строчного в блочный */
+}
+
+
+
+
+h6 {
+    color: red;
+    border: 2px solid red; /* solid - сплошной */
+    background: black;  /* hex code*/
+}
+
+aples {
+    width: 200px; /* width - длина */
+    background: #000;
+    margin: 100px 20px 10px 30px; /* отступы */
+    /* margin-top: 10px; */
+    padding: 10px 20px; /* сверху и снизу по 10, слева и справа по 20 */
+    /* padding - отступ внутрь элемента margin - отступ наружу */
+}
+
+.digit-item {
+    display: flex;
+    align-items: center;
+}
+.digit {
+    border: solid 1px #000000;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 77px;
+    height: 77px;
+    display: flex; /* практически тоже что и block */
+    align-items: center;
+    justify-content: center;
+    margin-right: 34px;
+}
+
+.digit-title {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+
+.digits {
+    display: flex;
+    flex-direction: column; /* flex по колонкам, так как по умолчанию в строку */
+    gap: 41px;
+    width: 720px;
+    margin: 70px auto 0 auto; /* справа и слева auto, то элемент будет по центру */
+}
+
+.practice-wrap {
+    background: linear-gradient(102deg, #E8FFE8 17.38%, #D1F0FF 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 93px 168px 89px 122px; /* отступы внутрь элемента */
+}
+
+.practice-block {
+    width: 432px;
+}
+
+.practice-title {
+    text-align: left; /* выравнивание по левому краю */
+}
+
+.practice-text {
+    margin: 24px 0;
+}
+
+.ball {
+    margin-right: 80px;
+    margin-left: 100px;
+}
+
+.chak {
+    margin-left: 301px;
+    margin-right: 50px;
+}
+
+.bler {
+    margin-left: 101px;
+}
+/*
+селектор (element or block) {
+    свойство: значение;
+    свойство: значение;
+    ...
+}
+
+селектор {
+    свойство: значение;
+    свойство: значение;
+    ...
+}
+*/
