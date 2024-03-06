@@ -111,7 +111,7 @@ section {
 }
 
 .offer-wrapper2 {
-    background: linear-gradient(102deg, #5fc1bd 17.38%, #d851ae 81.25%);
+    background: linear-gradient(102deg, #cc64d3 17.38%, #18d9b6 81.25%);
     display: flex;  /* элементы не последовательны а по горизонтали */
     align-items: center;
     justify-content: space-between;
@@ -127,10 +127,6 @@ section {
     width: 465px;
 }
 
-.logo {
-    margin: 0 auto;
-    display: block; /* преобразованиеиз строчного в блочный */
-}
 
 .ball {
     margin-right: 80px;
