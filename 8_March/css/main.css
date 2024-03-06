@@ -150,12 +150,6 @@ aples {
     /* padding - отступ внутрь элемента margin - отступ наружу */
 }
 
-.digit-item {
-    display: flex;
-    align-items: center;
-}
-
-
 .ball {
     margin-right: 80px;
     margin-left: 100px;
