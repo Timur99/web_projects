@@ -180,13 +180,6 @@ aples {
     margin: 70px auto 0 auto; /* справа и слева auto, то элемент будет по центру */
 }
 
-.practice-wrap {
-    background: linear-gradient(102deg, #E8FFE8 17.38%, #D1F0FF 81.25%);
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    padding: 93px 168px 89px 122px; /* отступы внутрь элемента */
-}
 
 .practice-block {
     width: 432px;
