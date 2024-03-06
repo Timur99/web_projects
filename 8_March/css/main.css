@@ -9,7 +9,6 @@ body {
     display: flex;  элементы не последовательны а по горизонтали
     align-items: center;
     */
-
 }
 
 .playfair-display-intro_text {
@@ -80,11 +79,6 @@ h2 {
 
 section {
     padding-top: 120px; /* отступ сверху по каждой секции */
-}
-
-.footer-wrapper {
-    align-items: center;
-    text-align: center;
 }
 
 .btn {
