@@ -40,18 +40,10 @@ body {
     margin: 0 auto;
 }
 
-/* будем использовать контейнеры
-div {
-    width: 465px;
-    margin-left: 180px;
-}
-*/
-
 p {
     margin: 0;
     line-height: 1.37em;
 }
-
 
 h1, h2, h3, h4 ,h5 ,h6 {
     margin: 0;
