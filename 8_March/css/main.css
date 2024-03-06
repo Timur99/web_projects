@@ -132,17 +132,6 @@ section {
     display: block; /* преобразованиеиз строчного в блочный */
 }
 
-
-
-
-h6 {
-    color: red;
-    border: 2px solid red; /* solid - сплошной */
-    background: black;  /* hex code*/
-}
-
-
-
 .ball {
     margin-right: 80px;
     margin-left: 100px;
