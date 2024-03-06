@@ -141,14 +141,7 @@ h6 {
     background: black;  /* hex code*/
 }
 
-aples {
-    width: 200px; /* width - длина */
-    background: #000;
-    margin: 100px 20px 10px 30px; /* отступы */
-    /* margin-top: 10px; */
-    padding: 10px 20px; /* сверху и снизу по 10, слева и справа по 20 */
-    /* padding - отступ внутрь элемента margin - отступ наружу */
-}
+
 
 .ball {
     margin-right: 80px;
