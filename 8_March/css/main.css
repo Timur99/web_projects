@@ -154,18 +154,7 @@ aples {
     display: flex;
     align-items: center;
 }
-.digit {
-    border: solid 1px #000000;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    width: 77px;
-    height: 77px;
-    display: flex; /* практически тоже что и block */
-    align-items: center;
-    justify-content: center;
-    margin-right: 34px;
-}
+
 
 .ball {
     margin-right: 80px;
