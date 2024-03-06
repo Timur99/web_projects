@@ -172,20 +172,7 @@ aples {
     margin-bottom: 11px;
 }
 
-.digits {
-    display: flex;
-    flex-direction: column; /* flex по колонкам, так как по умолчанию в строку */
-    gap: 41px;
-    width: 720px;
-    margin: 70px auto 0 auto; /* справа и слева auto, то элемент будет по центру */
-}
 
-
-
-
-.practice-text {
-    margin: 24px 0;
-}
 
 .ball {
     margin-right: 80px;
