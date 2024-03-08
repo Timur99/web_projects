@@ -131,7 +131,7 @@ aples {
 
 .digit-item:hover .digit { /* по сути мы хотим поменять digit при наведение на item */
     background: #1a1a1a;
-    color: whit;
+    color: white;
 }
 
 .digit-title {
