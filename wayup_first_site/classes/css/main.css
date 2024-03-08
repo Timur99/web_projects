@@ -60,11 +60,6 @@ section {
     padding-top: 120px; /* отступ сверху по каждой секции */
 }
 
-.footer-wrapper {
-    align-items: center;
-    text-align: center;
-}
-
 .btn {
     border-radius: 100px;
     background: black;
@@ -75,6 +70,11 @@ section {
     font-weight: 700; /* жирность текста */
     display: block; /* превращение текстового в блок, но решение это inline-block; */
     width: 218px;
+    transition: all 0.5s ease; /* плавная анимация для hover */
+}
+
+.btn:hover {  /* изменение кнопки при наведении */
+    background: #1a1a1a;
 }
 
 .offer-wrapper {
@@ -126,6 +126,12 @@ aples {
     align-items: center;
     justify-content: center;
     margin-right: 34px;
+    transition: all 0.5s ease;
+}
+
+.digit-item:hover .digit { /* по сути мы хотим поменять digit при наведение на item */
+    background: #1a1a1a;
+    color: white;
 }
 
 .digit-title {
@@ -163,6 +169,12 @@ aples {
 
 .ball {
     margin-right: 101px;
+}
+
+.footer {
+    padding: 120px 0;
+    text-align: center;
+    font-size: 15px;
 }
 
 /*
