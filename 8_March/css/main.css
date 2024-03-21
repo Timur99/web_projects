@@ -84,7 +84,7 @@ section {
     padding: 22px 70px;
     text-decoration: none; /* убирает подчеркивание у ссылок */
     font-size: 18px;
-    font-weight: 700; /* жирность текста */
+    font-weight: 700;
     display: block; /* превращение текстового в блок, но решение это inline-block; */
     width: 218px;
 }
