@@ -102,7 +102,7 @@ section {
 
 .offer-wrapper2 {
     background: linear-gradient(102deg, #cc64d3 17.38%, #18d9b6 81.25%);
-    display: flex;  /* элементы не последовательны а по горизонтали */
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 79px;
