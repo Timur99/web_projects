@@ -4,7 +4,8 @@ function submitAnswer(answer) {
     document.getElementById('answerForm').submit();
 }
 
-function
+function createSnowfall() {
+    const snowfallContainer = document.createElement
 
  // Функция для создания снегинки
 var maxsnow = 100;
