@@ -48,7 +48,7 @@ window.onload = function () {
     createSnowfall();
 }
 
-
+// Функция для изменения курсора
 document.addEventListener("DOMContentLoaded", function () {
             var cursor = document.querySelector(".custom-cursor");
 
