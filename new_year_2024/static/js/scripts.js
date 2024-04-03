@@ -57,6 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 var y = e.clientY;
 
                 cursor.style.left = x + "px";
-                cursor..top = y + "px";
+                cursor.style.top = y + "px";
             });
         });
