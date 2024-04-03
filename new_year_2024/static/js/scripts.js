@@ -4,6 +4,9 @@ function submitAnswer(answer) {
     document.getElementById('answerForm').submit();
 }
 
+function f() {
+    var answer = document.getElementById('answerInput')
+}
 
 
  // Функция для создания снегинки
