@@ -6,6 +6,9 @@ function submitAnswer(answer) {
 
 function f() {
     var answer = document.getElementById('answerInput')
+    answer.value = answer.value + 1;
+    document.getElementById('answerForm').submit();
+    console.log(answer.value);
 }
 
 
