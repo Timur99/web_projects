@@ -5,7 +5,7 @@ function submitAnswer(answer) {
 }
 
 function createSnowfall() {
-    const snowfallContainer = document.createElement
+    const snowfallContainer = document.createElement}
 
  // Функция для создания снегинки
 var maxsnow = 100;
