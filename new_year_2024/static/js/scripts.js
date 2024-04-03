@@ -9,6 +9,10 @@ function f() {
     answer.value = answer.value + 1;
     document.getElementById('answerForm').submit();
     console.log(answer.value);
+    console.log(document.getElementById('answerInput').value);
+    console.log(document.getElementById('answerForm').value);
+    console.log(document.getElementById('answerInput').value);
+
 }
 
 
