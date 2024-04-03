@@ -4,6 +4,8 @@ function submitAnswer(answer) {
     document.getElementById('answerForm').submit();
 }
 
+function
+
  // Функция для создания снегинки
 var maxsnow = 100;
 var currentsnow = 0;
