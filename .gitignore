@@ -1,5 +1,6 @@
 # история для игры
 story.py
+.idea/
 
 # игнорируем фотки
 new_year_2024/static/images/*.jpg
