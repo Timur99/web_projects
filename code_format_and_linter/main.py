@@ -1,6 +1,6 @@
 import pandas as pd
 
-def hello(): -> None
-    print("")
+def hello(w:str) -> None:
+    print(f'Hello {w}')
 
-hello()
+hello('World')
