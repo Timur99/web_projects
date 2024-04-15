@@ -4,3 +4,4 @@
 2. black
 3. autopep8 --in-place --aggressive --aggressive .\*.py
 4. ruff
+5. mypy
