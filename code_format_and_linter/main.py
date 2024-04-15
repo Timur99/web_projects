@@ -1,5 +1,6 @@
 import pandas as pd
 
-def hello():
+def hello(): -> None
     print("")
 
+hello()
