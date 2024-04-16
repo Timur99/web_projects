@@ -1,0 +1,4 @@
+
+Для создания коммента задним числом:
+git commit --date="2024-04-03 12:21:01" -m "use --date"
+git commit --date="yesterday 21:00" -m "use --date"
