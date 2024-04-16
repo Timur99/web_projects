@@ -6,4 +6,4 @@ wayup_first_site - education web
 
 8_March - for girlfriend/friend))
 
-code_format_and_linter
+code_format_and_linter = about linters and formatting
