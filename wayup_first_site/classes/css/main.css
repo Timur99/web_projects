@@ -193,30 +193,18 @@ aples {
     }
 }
 
-
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
     .container {
         max-width: 720px;
     }
-    .wrapper {
+    .offer-wrapper {
         flex-direction: column;
         text-align: center;
         gap: 51px;
     }
-    .button {
-        margin: 0 auto;
-    }
-    .action-wrap {
-        flex-direction: column;
-        text-align: center;
-        padding: 101px 144px;
-    }
-    .hero-text h2 {
-        text-align: center;
-    }
-    .action-wrap .intro {
-        margin: 24px auto;
+    .btn {
+        margin: 0 auto; /* выравнивание блока по центру */
     }
 }
 
@@ -225,16 +213,6 @@ aples {
     .container {
         max-width: 540px;
     }
-    .feature {
-        flex-direction: column;
-        text-align: center;
-    }
-    .features-container {
-        width: auto;
-    }
-    .action-wrap {
-        gap: 50px;
-    }
 }
 
 /* Extra small: 0px (320px) - 575px */
@@ -242,38 +220,9 @@ aples {
     .container {
         padding: 0 15px;
     }
-    .hero-image {
-        width: 100%;
-        display: block;
-    }
-    .hero-text {
-        width: auto;
-    }
-    h1 {
-        font-size: 45px;
-    }
-    .action-wrap img {
-        width: 201px;
-    }
-    .action-wrap {
-        padding: 70px 20px;
-    }
-    .action-wrap .hero-text {
-        width: 100%;
-    }
-    .action-wrap .intro {
-        width: auto;
-    }
-    section {
-        padding-top: 90px;
-    }
-    .footer {
-        padding: 90px 0;
-    }
-    .wrapper {
-        margin-top: 50px;
-    }
 }
+
+
 
 /*
 селектор (element or block) {
