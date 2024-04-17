@@ -186,12 +186,13 @@ aples {
 /* Responsive */
 
 
-/* Large: 992px - 1199px */
-@media (max-width: 1199px) {
+/* Large: 992px - 1199px - ширина попадает в этот диапазон*/
+@media (max-width: 1199px) {  /* брейкпоин */
     .container {
         max-width: 960px;
     }
 }
+
 
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
