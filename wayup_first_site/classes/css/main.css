@@ -1,4 +1,4 @@
-/* сначала ставить самые повторяемые объекты*/
+/* сначала ставить самые повторяемые объекты, а все что ниже - главнее */
 
 body {
     margin:0; /* это расстояние от элемента */
@@ -209,7 +209,17 @@ aples {
     .practice-wrap {
         flex-direction: column;
         text-align: center;
+        padding: 101px 144px;
         gap: 51px;
+    }
+    .ball {
+        margin: 0 auto;
+    }
+    .practice-title {
+        text-align: center;
+    }
+    .practice-text {
+        margin: 24px auto;
     }
 }
 
