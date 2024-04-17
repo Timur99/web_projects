@@ -230,14 +230,13 @@ aples {
     }
 }
 
+
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
     .container {
         padding: 0 15px;
     }
 }
-
-
 
 /*
 селектор (element or block) {
