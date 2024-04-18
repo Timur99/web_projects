@@ -228,7 +228,7 @@ aples {
     .container {
         max-width: 540px;
     }
-    .digits {
+    .digit-item {
         flex-direction: column;
         text-align: center;
         gap: 51px;
