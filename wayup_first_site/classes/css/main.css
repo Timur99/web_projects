@@ -228,6 +228,11 @@ aples {
     .container {
         max-width: 540px;
     }
+    .digits {
+        flex-direction: column;
+        text-align: center;
+        gap: 51px;
+    }
 }
 
 
