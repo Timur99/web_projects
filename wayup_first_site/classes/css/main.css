@@ -218,7 +218,7 @@ aples {
     .practice-title {
         text-align: center;
     }
-    .practice-wrap .practice-text {
+    .practice-wrap .practice-text { /* хч, почему тут нужно так */
         margin: 24px auto;
     }
 }
