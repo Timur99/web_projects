@@ -232,6 +232,9 @@ aples {
         flex-direction: column;
         text-align: center;
     }
+    .digits {
+        width: auto;
+    }
 }
 
 
