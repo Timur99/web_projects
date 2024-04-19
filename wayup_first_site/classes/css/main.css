@@ -234,7 +234,7 @@ aples {
     }
     .digits {
         width: auto;
-        gap: 41px
+        gap: 41px;
     }
 }
 
