@@ -236,6 +236,9 @@ aples {
         width: auto;
         gap: 41px;
     }
+    .practice-wrap {
+        gap: 51px;
+    }
 }
 
 
