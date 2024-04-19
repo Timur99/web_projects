@@ -247,9 +247,12 @@ aples {
     .container {
         padding: 0 15px;
     }
-    .logo {
+    .Watch {
         width: 100%;
         display: block;
+    }
+    .offer {
+        width: auto;
     }
 }
 
