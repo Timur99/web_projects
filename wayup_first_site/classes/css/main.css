@@ -247,6 +247,10 @@ aples {
     .container {
         padding: 0 15px;
     }
+    .logo {
+        width: 100%;
+        display: block;
+    }
 }
 
 /*
