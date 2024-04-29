@@ -248,6 +248,7 @@ aples {
 @media (max-width: 575px) {
     .container {
         padding: 0 15px;
+        max-width: 352px;
     }
     .first_image {
         width: 100%;
