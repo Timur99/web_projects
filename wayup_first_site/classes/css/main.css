@@ -93,7 +93,9 @@ section {
     display: block; /* преобразованиеиз строчного в блочный */
 }
 
-
+.first_image {
+    width: 465px;
+}
 
 
 h6 {
@@ -247,7 +249,7 @@ aples {
     .container {
         padding: 0 15px;
     }
-    .Watch {
+    .first_image {
         width: 100%;
         display: block;
     }
