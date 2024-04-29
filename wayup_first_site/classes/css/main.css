@@ -257,6 +257,9 @@ aples {
     .offer {
         width: auto;
     }
+    .ball {
+        width: 201px;
+    }
 }
 
 /*
