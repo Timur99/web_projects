@@ -261,11 +261,11 @@ aples {
         width: 201px;
         margin: 0 0;
     }
-        .practice-wrap {
-        flex-direction: column;
-        text-align: center;
-        padding: 101px 144px;
-        gap: 51px;
+    .practice-wrap {
+        padding: 70px 20px;
+    }
+    .practice-wrap .practice-block {
+        width: 100%;
     }
 }
 
