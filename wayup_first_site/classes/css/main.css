@@ -257,8 +257,9 @@ aples {
     .offer {
         width: auto;
     }
-    .ball {
+    .practice-wrap img {  /* так как единственная картинка */
         width: 201px;
+        margin: 0 0;
     }
 }
 
