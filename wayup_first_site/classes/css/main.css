@@ -261,6 +261,12 @@ aples {
         width: 201px;
         margin: 0 0;
     }
+        .practice-wrap {
+        flex-direction: column;
+        text-align: center;
+        padding: 101px 144px;
+        gap: 51px;
+    }
 }
 
 /*
