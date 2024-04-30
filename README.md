@@ -8,4 +8,4 @@ wayup_first_site - education web
 
 code_format_and_linter = about linters and formatting
 
-*.txt files - comments and info about this technology
+*.txt files - comments and info about technology
