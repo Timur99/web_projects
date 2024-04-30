@@ -151,7 +151,9 @@ section {
 
 /* Large: 992px - 1199px - ширина попадает в этот диапазон*/
 @media (max-width: 1199px) {  /* брейкпоин */
-
+    .container {
+        width: auto;
+    }
 }
 
 /* Medium: 768px - 991px */
