@@ -1,11 +1,11 @@
 **web_projects**
 
-new_year_2024 - first project
+1. new_year_2024 - first project
 
-wayup_first_site - education web
+2. wayup_first_site - education web
 
-8_March - for girlfriend/friend))
+3. 8_March - for girlfriend/friend))
 
-code_format_and_linter = about linters and formatting
+4. code_format_and_linter = about linters and formatting
 
 *.txt files - comments and info about technology
