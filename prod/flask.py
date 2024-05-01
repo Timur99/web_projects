@@ -1,7 +1,6 @@
-number = int(input())
+"""
+import os
 
-for i in range(2, number):
-    if number % i == 0:
-        print('False')
-    else:
-        print('True')
+def main():
+   pass
+"""
