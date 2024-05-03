@@ -1,0 +1,112 @@
+/* style.css */
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            background-image:url('/static/images/el.jpg');
+             cursor: url('/static/images/pencil.png'), auto;
+        }
+
+        .custom-cursor {
+    position: fixed;
+    width: 30px; /* Регулируйте размер курсора */
+    height: 30px;
+    background: url('/static/images/pencil.png') no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999; /* Устанавливаем z-index, чтобы курсор был выше остальных элементов */
+}
+
+        .game-container {
+            position: relative;
+            display: flex;
+            height: 550px;
+            max-width: 850px;
+            width: 90%;
+            background-color: #FCFDFDFF;
+            /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);*/
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+            z-index: 1;
+            font-family: 'montserrat';
+
+        }
+
+        .scene {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+            color: #050505;
+        }
+
+        .image-container {
+            width: 300px;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .options {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #050505;
+        }
+
+        .option-btn {
+            margin: 12px;
+            padding: 10px 50px;
+            font-size: 16px;
+           cursor: url('/static/images/pencil.png'), auto;
+            background-color: #ae0116;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-family: 'montserrat';
+        }
+
+        .exit_btn {
+            margin: 12px;
+            position: fixed;
+            padding: 10px 50px;
+            font-size: 16px;
+            cursor: url('/static/images/pencil.png'), auto;
+            background-color: #EE0116;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            top: 510px; /* Расстояние от верхнего края страницы */
+            left: 250px; /* Расстояние от левого края страницы */
+        }
+        /*снег */
+        .snowflake {
+    position: fixed;
+    width: 20px; /* Ширина изображения снежинки */
+    height: 20px; /* Высота изображения снежинки */
+    background-image: url('/static/images/snow.png'); /* Путь к вашей картинке */
+    background-size: contain;
+    pointer-events: none;
+            z-index: 0;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}

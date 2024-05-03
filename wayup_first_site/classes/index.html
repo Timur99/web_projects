@@ -1,4 +1,4 @@
-<!-- пишем ! + tab -->
+<!-- пишем команду "! + tab"  -->
 <!doctype html> <!-- вся дальнейшая страница в формате html5 -->
 <html lang="en"> <!-- тег html (главный контейнер) c атрибутом lang (страница на английском языке) -->
 <head>   <!-- открытие блока head -->
@@ -6,43 +6,81 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- управляем адаптивностью -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">   <!-- верстка подходящая под explorer и edge -->
-    <title>Sportbit</title> <!-- заголовок страницы -->
+    <link rel="icon" type="image/x-icon" href="img/image.png">  <!-- картинка 64 на 64 -->
+    <title>Sportbit Pro</title> <!-- заголовок страницы -->
+    <!-- шрифт скачал из гугл фонтс. Много шрифтов = медленная загрузка страницы -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>  <!-- контект страницы -->
-    <h1> Заголовок 1 </h1>  <!-- заголовок h1 -->
-    <h2> Заголовок 1 </h2>  <!-- заголовок h2 -->
-    <h3> Заголовок 1 </h3>  <!-- заголовок h3 -->
-    <h4> Заголовок 1 </h4>  <!-- заголовок h4 -->
-    <h5> Заголовок 1 </h5>  <!-- заголовок h5 -->
-    <h6 style="color: red"> Заголовок 1 </h6>  <!-- заголовок h6 -->
-    <div>  <!-- тег для группировки -->
-        <img src="img/image.png" alt="Watch" title="Watch">  <!-- alt - это суть изображения, если изображение не прогрузится то выводится alt. Не закрываем-->
-         <!-- title - при наведении отображает текст, работает с любым тегом -->
-        <a href="https://google.com" target="_blank">Якорь ссылки</a>   <!-- отвечает за ссылки. target='_blank' - открывает ссылку в соседней вкладке-->
-        <p>Параграф</p>  <!-- параграф текста = обычный текст -->
-    </div>
+    <header class="header" id="header">
+        <div class="container"> <!-- class нужен чтобы задавать параметры для контейнеров внутри него -->
+            <img src="img/logo.svg" alt="Sportbit" class="logo">
+            <div class="offer-wrapper"> <!-- обертка -->
+                <img src="img/image.png" alt="Watch" class="first_image">
+                <div class="offer"> <!-- группа объектов  -->
+                    <h1> Smart watch <br> for smart people</h1>  <!--br - это как \n-->
+                    <p class="intro_text">Perfect for your health, life and sports and etc.</p>
+                    <a href="#" class="btn">Buy now</a>  <!-- кнопка -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features" id="features">
+        <div class="container">
+            <h2>What does sportbit can?</h2>
+            <div class="digits">
+                <div class="digit-item">
+                <span class="digit">1</span>   <!-- что-то очень маленькое, слово или буква -->
+                <div class="digit-wrap">
+                    <h3 class="digit-title">Track your sport</h3>
+                    <p class="digit-text">Sportbit can track all of your sports activities through the day</p>
+                </div>
+            </div>
+                <div class="digit-item">
+                <span class="digit">2</span>   <!-- что-то очень маленькое, слово или буква -->
+                <div class="digit-wrap">
+                    <h3 class="digit-title">Track your sport</h3>
+                    <p class="digit-text"> With sportbit you never miss important updates on your health </p>
+                </div>
+            </div>
+                <div class="digit-item">
+                <span class="digit">3</span>   <!--span - это строчный тэг. что-то очень маленькое, слово или буква -->
+                <div class="digit-wrap">
+                    <h3 class="digit-title">Track your sport</h3>
+                    <p class="digit-text"> Gadgets have never been so inclusive into challenges you face</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="practice" id="practice">
+        <div class="container">
+            <div class="practice-wrap">
+                 <img src="img/ball.png" alt="practice_ball" class="ball">
+                 <div class="practice-block"> <!-- группа объектов  -->
+                    <h2 class="practice-title">
+                        Start the practice  <br> whenever you ready
+                    </h2>  <!--br - это как \n-->
+                    <p class="practice-text">Sportbit undestands any movement you make to start just the right practice and count every single calorie!</p>
+                    <a href="#" class="btn">Buy now</a>  <!-- кнопка -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer"> <!-- подвал -->
+        <div class="container">
+            <p class="footer-text">2024 Ⓒ All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>   <!-- закрытие контейнера html -->
 
 
 
 <!--
-
+ комментарии
 -->
 
-
-
-
-
-<!-- изначальный код
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
--->
