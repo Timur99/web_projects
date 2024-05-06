@@ -185,6 +185,19 @@ aples {
     font-size: 15px;
 }
 
+@keyframes rot { /*rot - это название анимации*/
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.practice-wrap img {
+    animation: 5s linear 0s normal none infinite running rot;
+}
+
 
 
 
