@@ -256,6 +256,9 @@ aples {
     .offer {
         width: auto;
     }
+    .offer-wrapper {
+        margin-top: 50px;
+    }
     .practice-wrap img {  /* так как единственная картинка */
         width: 201px;
         margin: 0 0;
@@ -271,6 +274,9 @@ aples {
     }
     .digit-item {
         gap: 10px;
+    }
+    .section {
+        padding-top: 90px;
     }
 }
 
