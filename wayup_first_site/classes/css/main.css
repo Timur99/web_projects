@@ -194,7 +194,7 @@ aples {
     }
 }
 
-.practice-wrap img {
+.practice-wrap img { /* обьявление анимации */
     animation: 5s linear 0s normal none infinite running rot;
 }
 
