@@ -1,6 +1,9 @@
 # flask
 from flask import Flask, render_template, request, redirect, url_for, make_response
 
+"""
+с помощью __name__ указываем, что app.py основной файл
+"""
 app = Flask(
     __name__,
     template_folder='templates',
