@@ -12,21 +12,9 @@ app = Flask(
 )
 
 
-@app.route('/')
+@app.route('/')  # какой url нужно отслеживать
 def index():
     return render_template('index.html')
 
-
-@app.route('/about')
-def about():
-    return render_template('about.html')
-
-
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
-
-
-@app.route('/login')
-def login():
-    return render_template('login.html')
+if __name__ == '__main__':  # если данный файл будет основным файлом для запуска
+    app.run(debug=True)     # True ошибки будут выводиться на сайте, чтобы ошибки не показывались на сайте - False
