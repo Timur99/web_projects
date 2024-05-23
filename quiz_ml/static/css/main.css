@@ -1,0 +1,20 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0; /* это расстояние от элемента */
+    padding:0;  /* это отступы внутри, тоесть от границ элемента */
+    font-family: 'Open Sans', sans-serif;  /* sans-serif - без засечки */
+    font-size: 18px; /* 18px для всех параграфов */
+    /*
+    display: flex;  элементы не последовательны а по горизонтали
+    align-items: center;
+    */
+}
+
+*  /* для всех элементов */
+    {
+    box-sizing: border-box;  /* border-box - задает фиксированный размер при использовании паддинга */
+}
