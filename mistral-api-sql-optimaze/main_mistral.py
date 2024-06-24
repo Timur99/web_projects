@@ -23,7 +23,7 @@ def process_text_route():
     return jsonify(result=result)
 
 def process_text(text):
-    api_key = ""
+    api_key = "" #тут нужен API токен от Mistral
     model = "mistral-large-latest"
 
     client = MistralClient(api_key=api_key)
