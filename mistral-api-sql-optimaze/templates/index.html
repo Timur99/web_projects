@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Process Text</title>
 </head>
 <body>
+    <h1>Process Text</h1>
+    <form id="process-text-form">
+        <label for="text-input">Enter text:</label>
+        <input type="text" id="text-input" name="text">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
 
+    <script>
+        // Отправка запроса на сервер при отправке формы
+        document.getElementById('process-text-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Получаем текст из поля ввода
+            var text = document.getElementById('text-input').value;
+
+            // Отправляем запрос на сервер
+            fetch('/process_text', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({text: text})
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Выводим результат в элемент с id="result"
+                document.getElementById('result').textContent = data.result;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        });
+    </script>
 </body>
 </html>
