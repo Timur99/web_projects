@@ -12,7 +12,7 @@ app = Flask(
 
 @app.route('/')
 def index():
-    return render_template('mistral.html')
+    return render_template('index.html')
 
 @app.route('/process_text', methods=['POST'])
 def process_text_route():
