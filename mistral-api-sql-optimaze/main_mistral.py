@@ -27,7 +27,7 @@ def process_text(text):
     model: версия модели
     """
 
-    api_key = "" #тут нужен API токен от Mistral
+    api_key = ""
     model = "mistral-large-latest"
 
     client = MistralClient(api_key=api_key)
