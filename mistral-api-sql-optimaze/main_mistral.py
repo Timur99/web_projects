@@ -18,7 +18,6 @@ def index():
 def process_text_route():
     # Получаем текст из запроса
     text = request.json['text']
-    # Передаем текст в функцию process_text
     result = process_text(text)
     return jsonify(result=result)
 
