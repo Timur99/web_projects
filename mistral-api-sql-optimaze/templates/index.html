@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Process Text</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="/static/main.css">
 </head>
 <body>
-    <h1>Process Text</h1>
-    <form id="process-text-form">
-        <label for="text-input">Enter text:</label>
-        <input type="text" id="text-input" name="text">
-        <button type="submit">Submit</button>
-    </form>
-    <div id="result"></div>
+    <div class="chat-container">
+        <div class="chat-box">
+            <textarea id="inputText" placeholder="Введите ваш запрос..."></textarea>
+            <button onclick="sendText()">Отправить</button>
+            <div id="responseText" class="response"></div>
+        </div>
+    </div>
 
     <script>
-        // Отправка запроса на сервер при отправке формы
-        document.getElementById('process-text-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Получаем текст из поля ввода
-            var text = document.getElementById('text-input').value;
-
-            // Отправляем запрос на сервер
+        function sendText() {
+            var text = document.getElementById("inputText").value;
             fetch('/process_text', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({text: text})
             })
             .then(response => response.json())
             .then(data => {
-                // Выводим результат в элемент с id="result"
-                document.getElementById('result').textContent = data.result;
+                document.getElementById("responseText").innerText = data.result;
             })
-            .catch(error => {
-                console.error(error);
-            });
-        });
+            .catch(error => console.error('Error:', error));
+        }
     </script>
 </body>
 </html>
