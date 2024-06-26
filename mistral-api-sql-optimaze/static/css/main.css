@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.chat-box {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #4a86e8;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.response {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+::placeholder {
+    color: #bbb;
+}
