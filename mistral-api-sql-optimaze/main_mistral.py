@@ -27,7 +27,19 @@ def process_text(text):
     model: версия модели
     """
 
-    api_key = ""
+    def get_api_key_from_file(filename):
+        try:
+            with open(filename, 'r') as file:
+                api_key = file.read().strip()
+            return api_key
+        except FileNotFoundError:
+            print(f"File {filename} not found.")
+            return None
+
+    # Использование функции
+    filename = "api_key.txt"
+    api_key = get_api_key_from_file(filename) #
+    #api_key = ""
     model = "mistral-large-latest"
 
     client = MistralClient(api_key=api_key)
