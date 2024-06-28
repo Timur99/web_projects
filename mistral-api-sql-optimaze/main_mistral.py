@@ -37,9 +37,8 @@ def process_text(text):
             return None
 
     # Использование функции
-    filename = "api_key.txt"
-    api_key = get_api_key_from_file(filename) # получение кода из файла. Можно просто вписать свой код как строку
-    #api_key = ""
+    filename = "token.txt"
+    api_key = get_api_key_from_file(filename)
     model = "mistral-large-latest"
 
     client = MistralClient(api_key=api_key)
