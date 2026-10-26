@@ -7,3 +7,9 @@ new_year_2024/static/images/*.jpg
 new_year_2024/static/images/*.png
 # игнорируем видео
 new_year_2024/static/videos
+
+# локальные окружения Python и API-ключ
+.venv/
+__pycache__/
+*.pyc
+mistral-api-sql-optimaze/token.txt
